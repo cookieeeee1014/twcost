@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "twcost"
+version = "0.1.0"
+description = "台灣證券交易成本的計算：手續費折扣、券商最低收費、證券交易稅、當日沖銷稅"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Office/Business :: Financial :: Investment",
+]
+
+[tool.setuptools]
+packages = ["twcost"]
+
+[project.scripts]
+twcost-gui = "twcost.gui:main"
